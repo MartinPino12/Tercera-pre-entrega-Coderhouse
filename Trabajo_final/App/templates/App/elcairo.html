@@ -1,0 +1,22 @@
+{% extends "App/padre.html" %}
+
+{% load static %}
+
+{% block contenidovariable %}
+
+<header class="masthead">
+    <div class="container px-4 px-lg-5 h-100">
+        <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
+            <div class="col-lg-8 align-self-end">
+                <h1 class="text-white font-weight-bold">EL CAIRO</h1>
+                <hr class="divider" />
+            </div>
+            <div class="col-lg-8 align-self-baseline">
+                <p class="text-white-75 mb-5">La ciudad milenaria de El Cairo, en Egipto, es un tesoro arqueológico y cultural. La Gran Esfinge y las Pirámides de Giza, majestuosas y misteriosas, son testimonio de la grandeza del pasado. Sus bulliciosos zocos y la impresionante Mezquita de Alabastro capturan la esencia de Oriente Medio. Sumérgete en la historia y la espiritualidad de una de las civilizaciones más antiguas del mundo.</p>
+                <a class="btn btn-primary btn-xl" href="{% url 'Ciudades' %}">Volver</a>
+            </div>
+        </div>
+    </div>
+</header>
+
+{% endblock contenidovariable %}

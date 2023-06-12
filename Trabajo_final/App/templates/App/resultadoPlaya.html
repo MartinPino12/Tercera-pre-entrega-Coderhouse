@@ -1,0 +1,27 @@
+{% extends "App/padre.html" %}
+
+{% load static %}
+
+{% block contenidovariable %}
+
+
+<br>
+<br>
+<br>
+<h2>Resultados de búsqueda</h2>
+
+{% if playas %}
+  <ul>
+    {% for playa in playas %}
+      <li>{{ playa.nombre }} - {{ playa.pais }}</li>
+    {% endfor %}
+  </ul>
+{% else %}
+  <p>No se encontraron resultados para la búsqueda.</p>
+{% endif %}
+
+<button onclick="window.history.back()">Realizar nueva búsqueda</button>
+
+<a href="{% url 'Playas' %}">Volver a Playas</a>
+
+{% endblock contenidovariable %}

@@ -1,0 +1,22 @@
+{% extends "App/padre.html" %}
+
+{% load static %}
+
+{% block contenidovariable %}
+
+<header class="masthead">
+    <div class="container px-4 px-lg-5 h-100">
+        <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
+            <div class="col-lg-8 align-self-end">
+                <h1 class="text-white font-weight-bold">KE'E BEACH</h1>
+                <hr class="divider" />
+            </div>
+            <div class="col-lg-8 align-self-baseline">
+                <p class="text-white-75 mb-5">Ubicada en la espectacular costa norte de Kauai, Ke'e Beach es un refugio paradisíaco. Sus aguas cristalinas, rodeadas de exuberante vegetación tropical y montañas escarpadas, crean un escenario idílico. Esta playa ofrece oportunidades para nadar, hacer snorkel y disfrutar de impresionantes puestas de sol, brindando una experiencia mágica en el corazón de Hawái.</p>
+                <a class="btn btn-primary btn-xl" href="{% url 'Playas' %}">Volver</a>
+            </div>
+        </div>
+    </div>
+</header>
+
+{% endblock contenidovariable %}

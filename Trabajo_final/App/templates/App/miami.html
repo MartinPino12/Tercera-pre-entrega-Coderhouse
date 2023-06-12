@@ -1,0 +1,22 @@
+{% extends "App/padre.html" %}
+
+{% load static %}
+
+{% block contenidovariable %}
+
+<header class="masthead">
+    <div class="container px-4 px-lg-5 h-100">
+        <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
+            <div class="col-lg-8 align-self-end">
+                <h1 class="text-white font-weight-bold">MIAMI</h1>
+                <hr class="divider" />
+            </div>
+            <div class="col-lg-8 align-self-baseline">
+                <p class="text-white-75 mb-5"> Las playas de Miami son un símbolo del estilo de vida de lujo y la diversión de la ciudad. Desde South Beach hasta Sunny Isles, las playas de Miami seducen con su arena blanca y su agua cristalina. Además de tomar el sol y nadar, las playas de Miami son famosas por sus vibrantes fiestas y su escena artística. Disfruta del glamour y el ambiente único que ofrece esta icónica ciudad playera.</p>
+                <a class="btn btn-primary btn-xl" href="{% url 'Playas' %}">Volver</a>
+            </div>
+        </div>
+    </div>
+</header>
+
+{% endblock contenidovariable %}

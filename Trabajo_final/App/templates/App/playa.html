@@ -1,0 +1,74 @@
+{% extends "App/padre.html" %}
+
+{% load static %}
+
+{% block contenidovariable %}
+<div id="portfolio">
+    <div class="container-fluid p-0">
+        <div class="row g-0">
+            <div class="col-lg-4 col-sm-6">
+                <a class="portfolio-box" href="{% url 'Hawai' %}" title="Project Name">
+                    <img class="img-fluid" src="{% static 'App/assets/img/portfolio/thumbnails/hawai.jpg' %}" alt="..." />
+                    <div class="portfolio-box-caption">
+                        <div class="project-category text-white-50">Playa</div>
+                        <div class="project-name">Ke'e beach - Hawai</div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <a class="portfolio-box" href="{% url 'Nazare' %}" title="Project Name">
+                    <img class="img-fluid" src="{% static 'App/assets/img/portfolio/thumbnails/nazare.jpg' %}" alt="..." />
+                    <div class="portfolio-box-caption">
+                        <div class="project-category text-white-50">Playa</div>
+                        <div class="project-name">Nazare - Portugal</div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <a class="portfolio-box" href="{% url 'Quarta Praia' %}" title="Project Name">
+                    <img class="img-fluid" src="{% static 'App/assets/img/portfolio/thumbnails/sanandres.jpg' %}" alt="..." />
+                    <div class="portfolio-box-caption">
+                        <div class="project-category text-white-50">Playa</div>
+                        <div class="project-name">Quarta Praia - Brasil</div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <a class="portfolio-box" href="{% url 'Playa de Patong' %}" title="Project Name">
+                    <img class="img-fluid" src="{% static 'App/assets/img/portfolio/thumbnails/cancun.jpg' %}" alt="..." />
+                    <div class="portfolio-box-caption">
+                        <div class="project-category text-white-50">Playa</div>
+                        <div class="project-name">Playa de Patong</div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <a class="portfolio-box" href="{% url 'Playa del Carmen' %}" title="Project Name">
+                    <img class="img-fluid" src="{% static 'App/assets/img/portfolio/thumbnails/maldivas.jpg' %}" alt="..." />
+                    <div class="portfolio-box-caption">
+                        <div class="project-category text-white-50">Playa</div>
+                        <div class="project-name">Playa del Carmen</div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <a class="portfolio-box" href="{% url 'Miami' %}" title="Project Name">
+                    <img class="img-fluid" src="{% static 'App/assets/img/portfolio/thumbnails/miami.jpg' %}" alt="..." />
+                    <div class="portfolio-box-caption p-3">
+                        <div class="project-category text-white-50">Playa</div>
+                        <div class="project-name">Miami</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<section class="page-section bg-dark text-white">
+    <div class="container px-4 px-lg-5 text-center">
+        <h2 class="mb-4">Puedes agregar y/o buscar tu propia playa!</h2>
+        <a class="btn btn-light btn-xl" href="{% url 'Playa Formulario' %}">Agregar playa</a>
+        <a class="btn btn-light btn-xl" href="{% url 'Buscar Playa' %}">Buscar playa</a>
+    </div>
+</section>
+
+{% endblock contenidovariable %}

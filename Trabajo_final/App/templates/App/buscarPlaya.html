@@ -1,0 +1,20 @@
+{% extends "App/padre.html" %}
+
+{% load static %}
+
+{% block contenidovariable %}
+
+
+<br>
+<br>
+<br>
+<form method="GET" action="">
+    <input type="text" name="nombre" placeholder="Nombre de la playa">
+    <input type="text" name="pais" placeholder="País">
+    <button type="submit">Buscar</button>
+</form>
+<br>
+<br>
+<button onclick="window.history.back()">Volver</button>
+
+{% endblock contenidovariable %}

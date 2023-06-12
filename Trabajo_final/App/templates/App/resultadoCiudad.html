@@ -1,0 +1,27 @@
+{% extends "App/padre.html" %}
+
+{% load static %}
+
+{% block contenidovariable %}
+
+
+<br>
+<br>
+<br>
+<h2>Resultados de búsqueda</h2>
+
+{% if ciudades %}
+  <ul>
+    {% for ciudad in ciudades %}
+      <li>{{ ciudad.nombre }} - {{ ciudad.pais }}</li>
+    {% endfor %}
+  </ul>
+{% else %}
+  <p>No se encontraron resultados para la búsqueda.</p>
+{% endif %}
+
+<button onclick="window.history.back()">Realizar nueva busqueda</button>
+
+<a href="{% url 'Ciudades' %}">Volver al Ciudades</a>
+
+{% endblock contenidovariable %}

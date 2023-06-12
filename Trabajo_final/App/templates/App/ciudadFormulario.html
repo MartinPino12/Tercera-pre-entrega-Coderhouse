@@ -1,0 +1,26 @@
+{% extends "App/padre.html" %}
+
+{% load static %}
+
+{% block contenidovariable %}
+
+
+<br>
+<br>
+<br>
+    <form action="" method="POST">  {% csrf_token %}
+
+        <table>
+            {{miFormulario.as_table}}
+        </table>
+
+        <input type="submit", value="Enviar">
+
+
+
+    </form>
+    <br>
+    <br>
+    <button onclick="window.history.back()">Volver</button>
+
+{% endblock contenidovariable %}

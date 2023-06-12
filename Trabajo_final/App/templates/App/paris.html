@@ -1,0 +1,22 @@
+{% extends "App/padre.html" %}
+
+{% load static %}
+
+{% block contenidovariable %}
+
+<header class="masthead">
+    <div class="container px-4 px-lg-5 h-100">
+        <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
+            <div class="col-lg-8 align-self-end">
+                <h1 class="text-white font-weight-bold">PARIS</h1>
+                <hr class="divider" />
+            </div>
+            <div class="col-lg-8 align-self-baseline">
+                <p class="text-white-75 mb-5">La Ciudad de la Luz es un sueño hecho realidad para los amantes del arte, la moda y la gastronomía. Sus elegantes avenidas, la majestuosidad de la Torre Eiffel y los encantadores cafés crean una atmósfera romántica inigualable. Museos renombrados, como el Louvre, albergan tesoros culturales mientras que el río Sena fluye sereno. París es sinónimo de estilo, sofisticación y encanto eterno</p>
+                <a class="btn btn-primary btn-xl" href="{% url 'Ciudades' %}">Volver</a>
+            </div>
+        </div>
+    </div>
+</header>
+
+{% endblock contenidovariable %}

@@ -1,0 +1,75 @@
+{% extends "App/padre.html" %}
+
+{% load static %}
+
+{% block contenidovariable %}
+<div id="portfolio">
+    <div class="container-fluid p-0">
+        <div class="row g-0">
+            <div class="col-lg-4 col-sm-6">
+                <a class="portfolio-box" href="{% url 'New York' %}" title="Project name">
+                    <img class="img-fluid" src="{% static 'App/assets/img/portfolio/thumbnails/newyork.jpg' %}"  alt="..." />
+                    <div class="portfolio-box-caption">
+                        <div class="project-category text-white-50">Ciudad</div>
+                        <div class="project-name">New York</div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <a class="portfolio-box" href="{% url 'Paris' %}" title="Project name">
+                    <img class="img-fluid" src="{% static 'App/assets/img/portfolio/thumbnails/paris.jpg' %}"  alt="..." />
+                    <div class="portfolio-box-caption">
+                        <div class="project-category text-white-50">Ciudad</div>
+                        <div class="project-name">Paris</div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <a class="portfolio-box" href="{% url 'Sidney' %}" title="Project Name">
+                    <img class="img-fluid" src="{% static 'App/assets/img/portfolio/thumbnails/sidney.jpg' %}"  alt="..." />
+                    <div class="portfolio-box-caption">
+                        <div class="project-category text-white-50">Ciudad</div>
+                        <div class="project-name">Sidney</div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <a class="portfolio-box" href="{% url 'Rio' %}" title="Project Name">
+                    <img class="img-fluid" src="{% static 'App/assets/img/portfolio/thumbnails/rio.jpg' %}"  alt="..." />
+                    <div class="portfolio-box-caption">
+                        <div class="project-category text-white-50">Ciudad</div>
+                        <div class="project-name">Rio de Janeiro</div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <a class="portfolio-box" href="{% url 'El Cairo' %}" title="Project Name">
+                    <img class="img-fluid" src="{% static 'App/assets/img/portfolio/thumbnails/elcairo.jpg' %}"  alt="..." />
+                    <div class="portfolio-box-caption">
+                        <div class="project-category text-white-50">Ciudad</div>
+                        <div class="project-name">El cairo</div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <a class="portfolio-box" href="{% url 'Buenos Aires' %}" title="Project Name">
+                    <img class="img-fluid" src="{% static 'App/assets/img/portfolio/thumbnails/bsas.jpg' %}"  alt="..." />
+                    <div class="portfolio-box-caption p-3">
+                        <div class="project-category text-white-50">Ciudad</div>
+                        <div class="project-name">Buenos Aires</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section class="page-section bg-dark text-white">
+    <div class="container px-4 px-lg-5 text-center">
+        <h2 class="mb-4">Puedes agregar y/o buscar tu propia ciudad!</h2>
+        <a class="btn btn-light btn-xl" href="{% url 'Ciudad Formulario' %}">Agregar ciudad</a>
+        <a class="btn btn-light btn-xl" href="{% url 'Buscar Ciudad' %}">Buscar ciudad</a>
+    </div>
+</section>
+
+{% endblock contenidovariable %}
